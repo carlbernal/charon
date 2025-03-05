@@ -5,8 +5,16 @@
   "git": "github.com/carlbernal",
   "gpt": "chatgpt.com/",
   "hn": "news.ycombinator.com/",
-  "kindle": "read.amazon.com/",
-  "r": "reddit.com/",
   "shopee": "shopee.ph/user/purchase?type=8",
-  "yt": "youtube.com"
+  "t": "twitch.tv",
+  "yt": "youtube.com",
+  "py": [
+    "https://docs.python.org/3/library/",
+    "https://docs.python.org/3/library/functions.html",
+    "https://peps.python.org/pep-0008/"
+  ],
+  "cl": [
+    "cl-community-spec.github.io",
+    "lispcookbook.github.io/cl-cookbook/"
+  ]
 }

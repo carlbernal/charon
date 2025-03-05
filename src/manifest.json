@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Charon",
-  "version": "0.2.1",
-  "description": "My omnibox extension implementation.",
+  "version": "0.3.0",
+  "description": "Carlbernal's omnibox extension implementation.",
   "homepage_url": "https://github.com/carlbernal/charon",
   "icons": {
     "16": "img/canoe-16.png",
@@ -17,15 +17,8 @@
     "default_popup": "index.html"
   },
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "service_worker": "background.js",
     "type": "module"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "{6fd597f6-33d7-46be-852e-6a4f16d8dd06}"
-    }
   },
   "omnibox": {
     "keyword": "c"

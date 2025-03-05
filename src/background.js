@@ -14,10 +14,26 @@ browser.omnibox.onInputEntered.addListener(async (text) => {
     active: true,
     windowId: browser.windows.WINDOW_ID_CURRENT,
   });
-  browser.tabs.create({
-    active: true,
-    index: currentTab[0].index,
-    url: redirect,
-  });
-  browser.tabs.remove(currentTab[0].id);
+
+  // Opens one tab
+  if (typeof redirect === "string") {
+    browser.tabs.create({
+      active: true,
+      index: currentTab[0].index,
+      url: redirect,
+    });
+    browser.tabs.remove(currentTab[0].id);
+  }
+  // Opens multiple tabs
+  else if (Array.isArray(redirect)) {
+    let newIndex = currentTab[0].index + 1;
+    redirect.forEach((item) => {
+      browser.tabs.create({
+        active: false,
+        index: newIndex++,
+        url: item,
+      });
+    });
+    browser.tabs.remove(currentTab[0].id);
+  }
 });
