@@ -14,15 +14,27 @@
 
 - Click the extension icon.
 
-- Type in your shortcuts in JSON format:
+- Enter your shortcuts in JSON format using the following schema:
 
   ```json
   {
-    "pattern": "url",
-    "g": "https://google.com",
-    "yt": "https://youtube.com"
+    "pattern": "example.com",
+    "pattern2": [
+      "example.com",
+      "google.com"
+    ],
+    "fb": "facebook.com",
+    "w": "wikipedia.org",
+    "yt": "youtube.com/@HappyConsoleGamer"
   }
   ```
+
+  *Shortcut Rules:* 
+  - **Single Shortcut Mapping**: `"pattern"` opens a single web page.
+  - **Multiple Web Pages**: `"pattern2"` opens multiple web pages at once.
+
+  The shortcut saves automatically after typing. If there are errors, the
+  extension will notify you at the bottom of the text area. 
 
 2.  **Activate Omnibox**
 
@@ -31,5 +43,6 @@
 - In the search bar, type `c` followed by `tab` or `space` to activate the
   extension.
 
-- Then, type your shortcut, for example `g` for Google, and hit enter to
+- Then, type your shortcut (e.g., `fb` for Facebook) and press Enter to
   navigate to the site.
+
