@@ -26,10 +26,10 @@ browser.omnibox.onInputEntered.addListener(async (text) => {
   }
   // Opens multiple tabs
   else if (Array.isArray(redirect)) {
-    let newIndex = currentTab[0].index + 1;
-    redirect.forEach((item) => {
+    let newIndex = currentTab[0].index;
+    redirect.forEach((item, index) => {
       browser.tabs.create({
-        active: false,
+        active: index === 0,
         index: newIndex++,
         url: item,
       });
