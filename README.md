@@ -4,7 +4,7 @@
 
 ## Installation:
 
-- For Firefox, install the extension using [Charon's Firefox XPI link](https://addons.mozilla.org/firefox/downloads/file/4448897/c509ba01a68a42e68392-0.3.0.xpi).
+- For Firefox, install the extension using [Charon's Firefox XPI link](https://addons.mozilla.org/firefox/downloads/file/4449126/c509ba01a68a42e68392-0.3.1.xpi).
 
 - For Chrome, go to [Charon's Chrome Web Store page](https://chromewebstore.google.com/detail/charon/immickcjonbehjmmeddiljnnoigdcfkl).
 
