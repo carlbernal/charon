@@ -14,19 +14,20 @@ browser.omnibox.onInputEntered.addListener(async (text) => {
     active: true,
     windowId: browser.windows.WINDOW_ID_CURRENT,
   });
+  const currentIndex = currentTab[0].index;
 
   // Opens one tab
   if (typeof redirect === "string") {
     browser.tabs.create({
       active: true,
-      index: currentTab[0].index,
+      index: currentIndex,
       url: redirect,
     });
     browser.tabs.remove(currentTab[0].id);
   }
   // Opens multiple tabs
   else if (Array.isArray(redirect)) {
-    let newIndex = currentTab[0].index;
+    let newIndex = currentIndex;
     redirect.forEach((item, index) => {
       browser.tabs.create({
         active: index === 0,
