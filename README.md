@@ -4,7 +4,7 @@
 
 ## Installation:
 
-- For Firefox, install the extension using [Charon's Firefox XPI link](https://addons.mozilla.org/firefox/downloads/file/4449673/c509ba01a68a42e68392-0.3.2.xpi).
+- For Firefox, install the extension using [Charon's Firefox XPI link](https://addons.mozilla.org/firefox/downloads/file/4449673/c509ba01a68a42e68392-0.3.3.xpi).
 
 - For Chrome, go to [Charon's Chrome Web Store page](https://chromewebstore.google.com/detail/charon/immickcjonbehjmmeddiljnnoigdcfkl).
 
@@ -29,12 +29,12 @@
   }
   ```
 
-  *Shortcut Rules:* 
+  *Shortcut Rules:*
   - **Single Shortcut Mapping**: `"pattern"` opens a single web page.
   - **Multiple Web Pages**: `"pattern2"` opens multiple web pages at once.
 
   The shortcut saves automatically after typing. If there are errors, the
-  extension will notify you at the bottom of the text area. 
+  extension will notify you at the bottom of the text area.
 
 2.  **Activate Omnibox**
 
@@ -45,4 +45,3 @@
 
 - Then, type your shortcut (e.g., `fb` for Facebook) and press Enter to
   navigate to the site.
-

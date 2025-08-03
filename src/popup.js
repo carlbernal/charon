@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // Save shortcuts 0.8 secs after user stops typing
-  let typingTimer;
+  let typingTimer = 0;
   const typingDelay = 800;
   textarea.addEventListener("input", () => {
     clearTimeout(typingTimer);
@@ -99,7 +99,7 @@ function isValidShortcut(shortcuts) {
       }
 
       shortcut.forEach((item) => {
-        if (typeof item !== "string" || !isValidUrl(shortcut)) {
+        if (typeof item !== "string" || !isValidUrl(item)) {
           const err = `Invalid URL in array: ${item}`;
           showToast(err);
           throw new Error(err);
